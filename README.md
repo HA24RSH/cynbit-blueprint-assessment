@@ -1,1 +1,0 @@
-# cynbit-blueprint-assessment
