@@ -1237,3 +1237,78 @@
     flex: auto;
   }
 }
+
+/* Contact form */
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.contact-form-grid .form-field {
+  min-width: 0;
+}
+
+/* Submission panel */
+
+.blueprint-submit-panel {
+  margin-top: 22px;
+  padding: 22px;
+  border: 1px solid #dcebe8;
+  border-radius: 13px;
+  background: #f4faf9;
+}
+
+.blueprint-submit-panel h3 {
+  margin: 0 0 9px;
+  color: #193b42;
+  font-size: 15px;
+}
+
+.blueprint-submit-panel > p {
+  color: #7d8d91;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.submit-project-button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.submit-error {
+  color: #c54d4d !important;
+}
+
+.submit-project-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.submission-success {
+  text-align: center;
+  padding: 12px 5px;
+}
+
+.submission-success > svg {
+  color: #14986e;
+}
+
+.submission-success > strong {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px 17px;
+  border: 1px dashed #83bdb0;
+  border-radius: 9px;
+  background: white;
+  color: #087b7e;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+  .contact-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
